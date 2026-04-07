@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./src/static/css/input.css -o ./src/static/css/output.css --watch --content ./src/templates/**/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@11.0.0-beta.6",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "daisyui": "^5.5.19"
+  }
 }

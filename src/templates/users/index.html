@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block content %}
+<header class="space-y-3 text-center">
+    <h1 class="text-3xl font-bold">
+        Wawa<span class="text-white bg-red-500">music</span>
+    </h1>
+    <p class="text-2xl text-neutral-400">
+        Una red social para descubrir, compartir y guardar música. Conecta a
+        través de canciones y explora lo que otros están escuchando.
+    </p>
+</header>
+<main class="space-y-8 mt-12 xl:mt-24">
+    <section>
+        <h2 class="text-2xl font-semibold">Empieza ahora</h2>
+        <p class="text-lg text-neutral-400">
+            Solo escribe tu usuario. Si es tu primera vez, creamos tu cuenta al
+            instante.
+        </p>
+    </section>
+    <section>
+        <form method="post" class="space-y-6">
+            <label for="username" class="floating-label">
+                <span>Nombre de usuario</span>
+                <input
+                    type="text"
+                    placeholder="Nombre de usuario"
+                    class="input validator input-lg"
+                    required
+                    name="username"
+                    id="username"
+                />
+            </label>
+            <label for="password" class="floating-label">
+                <span>Contraseña</span>
+                <input
+                    type="text"
+                    placeholder="Contraseña"
+                    class="input validator input-lg"
+                    required
+                    name="password"
+                    id="password"
+                />
+            </label>
+            <button class="btn btn-primary btn-md">Entrar</button>
+        </form>
+    </section>
+</main>
+{% endblock%}
